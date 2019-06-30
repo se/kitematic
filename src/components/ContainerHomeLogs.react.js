@@ -40,7 +40,7 @@ let prevBottom = 0;
 module.exports = React.createClass({
   getInitialState: function(){
     return {
-      fontSize: 10,
+      fontSize: 14,
       follow: true,
     };
   },
@@ -121,7 +121,7 @@ module.exports = React.createClass({
         <div className="widget">
           <div className="top-bar">
             <div className="text">Container Logs</div>
-            <div>
+            <div className="actions">
               <label className="follow-logs__label">
                 Follow&nbsp;
                 <input type="checkbox" onChange={ this.toggleFollow } checked={ this.state.follow }></input>
